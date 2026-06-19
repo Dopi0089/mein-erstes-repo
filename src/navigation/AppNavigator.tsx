@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { createStackNavigator } from '@react-navigation/stack';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Ionicons } from '@expo/vector-icons';
 import { colors } from '../theme';
 import { useAutomationStore } from '../store/automationStore';
@@ -18,7 +18,7 @@ import { TuyaSettingsScreen } from '../screens/settings/TuyaSettingsScreen';
 import { EufySettingsScreen } from '../screens/settings/EufySettingsScreen';
 
 const Tab = createBottomTabNavigator();
-const Stack = createStackNavigator();
+const Stack = createNativeStackNavigator();
 
 function SettingsStack() {
   return (
@@ -26,8 +26,7 @@ function SettingsStack() {
       screenOptions={{
         headerStyle: { backgroundColor: colors.surface },
         headerTintColor: colors.textPrimary,
-        headerTitleStyle: { color: colors.textPrimary },
-        cardStyle: { backgroundColor: colors.background },
+        contentStyle: { backgroundColor: colors.background },
       }}
     >
       <Stack.Screen name="SettingsMain" component={SettingsScreen} options={{ title: 'Einstellungen' }} />
