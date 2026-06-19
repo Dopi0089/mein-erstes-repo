@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import type { Automation, NotificationEvent } from '@/types';
+import type { Automation, NotificationEvent } from '../types';
 
 const AUTOMATIONS_KEY = 'smarthome_automations';
 const NOTIFICATIONS_KEY = 'smarthome_notifications';

@@ -1,5 +1,5 @@
 import axios from 'axios';
-import type { Device, DeviceState, EufyConfig, ISmartHomeProvider } from '@/types';
+import type { Device, DeviceState, EufyConfig, ISmartHomeProvider } from '../types';
 
 const BASE_URL = 'https://mysecurity.eufylife.com/api/v1';
 

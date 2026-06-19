@@ -2,13 +2,13 @@ import React, { useEffect } from 'react';
 import { View, Text, ScrollView, RefreshControl, StyleSheet, TouchableOpacity } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
-import { colors, spacing, typography } from '@/theme';
-import { RoomGroup } from '@/components/RoomGroup';
-import { DeviceCard } from '@/components/DeviceCard';
-import { ConnectionStatus } from '@/components/ConnectionStatus';
-import { useDeviceStore } from '@/store/deviceStore';
-import { syncAllDevices } from '@/services/deviceManager';
-import type { Device } from '@/types';
+import { colors, spacing, typography } from '../theme';
+import { RoomGroup } from '../components/RoomGroup';
+import { DeviceCard } from '../components/DeviceCard';
+import { ConnectionStatus } from '../components/ConnectionStatus';
+import { useDeviceStore } from '../store/deviceStore';
+import { syncAllDevices } from '../services/deviceManager';
+import type { Device } from '../types';
 
 export function DashboardScreen() {
   const { devices, loading, getRooms } = useDeviceStore();

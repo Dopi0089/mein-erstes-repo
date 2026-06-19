@@ -5,12 +5,12 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
-import { colors, spacing, borderRadius, typography } from '@/theme';
-import { AutomationCard } from '@/components/AutomationCard';
-import { useAutomationStore } from '@/store/automationStore';
-import { buildTimeAutomationId } from '@/services/automationService';
-import { useDeviceStore } from '@/store/deviceStore';
-import type { Automation } from '@/types';
+import { colors, spacing, borderRadius, typography } from '../theme';
+import { AutomationCard } from '../components/AutomationCard';
+import { useAutomationStore } from '../store/automationStore';
+import { buildTimeAutomationId } from '../services/automationService';
+import { useDeviceStore } from '../store/deviceStore';
+import type { Automation } from '../types';
 
 export function AutomationsScreen() {
   const { automations, loadAutomations, addAutomation, deleteAutomation } = useAutomationStore();

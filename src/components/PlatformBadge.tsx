@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import { colors, borderRadius, typography } from '@/theme';
-import type { Platform } from '@/types';
+import { colors, borderRadius, typography } from '../theme';
+import type { Platform } from '../types';
 
 const LABELS: Record<Platform, string> = {
   hue: 'Hue',

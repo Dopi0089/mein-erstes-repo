@@ -1,5 +1,5 @@
 import { createHttpClient } from './baseApi';
-import type { Device, DeviceState, HueConfig, ISmartHomeProvider } from '@/types';
+import type { Device, DeviceState, HueConfig, ISmartHomeProvider } from '../types';
 
 export class HueApi implements ISmartHomeProvider {
   readonly platform = 'hue' as const;

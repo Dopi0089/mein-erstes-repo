@@ -1,5 +1,5 @@
 import { createHttpClient } from './baseApi';
-import type { Device, DeviceState, ShellyConfig, ISmartHomeProvider } from '@/types';
+import type { Device, DeviceState, ShellyConfig, ISmartHomeProvider } from '../types';
 
 export class ShellyApi implements ISmartHomeProvider {
   readonly platform = 'shelly' as const;

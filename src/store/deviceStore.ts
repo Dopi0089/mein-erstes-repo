@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import type { Device, DeviceState, Platform } from '@/types';
+import type { Device, DeviceState, Platform } from '../types';
 
 interface DeviceStore {
   devices: Device[];

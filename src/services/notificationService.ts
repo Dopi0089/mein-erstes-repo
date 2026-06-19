@@ -1,7 +1,7 @@
 import * as ExpoNotifications from 'expo-notifications';
 import { Platform } from 'react-native';
-import { useAutomationStore } from '@/store/automationStore';
-import type { Platform as SmartPlatform, NotificationEvent } from '@/types';
+import { useAutomationStore } from '../store/automationStore';
+import type { Platform as SmartPlatform, NotificationEvent } from '../types';
 
 ExpoNotifications.setNotificationHandler({
   handleNotification: async () => ({

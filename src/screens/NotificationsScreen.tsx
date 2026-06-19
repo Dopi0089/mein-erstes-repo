@@ -2,9 +2,9 @@ import React, { useEffect } from 'react';
 import { View, Text, ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
-import { colors, spacing, borderRadius, typography } from '@/theme';
-import { PlatformBadge } from '@/components/PlatformBadge';
-import { useAutomationStore } from '@/store/automationStore';
+import { colors, spacing, borderRadius, typography } from '../theme';
+import { PlatformBadge } from '../components/PlatformBadge';
+import { useAutomationStore } from '../store/automationStore';
 
 export function NotificationsScreen() {
   const { notifications, unreadCount, loadNotifications, markAllRead } = useAutomationStore();

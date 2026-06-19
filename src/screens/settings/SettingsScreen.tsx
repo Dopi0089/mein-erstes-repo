@@ -3,8 +3,8 @@ import { View, Text, ScrollView, TouchableOpacity, StyleSheet } from 'react-nati
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
-import { colors, spacing, borderRadius, typography } from '@/theme';
-import { useSettingsStore } from '@/store/settingsStore';
+import { colors, spacing, borderRadius, typography } from '../../theme';
+import { useSettingsStore } from '../../store/settingsStore';
 
 const PLATFORMS = [
   { key: 'hue', label: 'Philips Hue', icon: 'bulb', screen: 'HueSettings', color: colors.platforms.hue },

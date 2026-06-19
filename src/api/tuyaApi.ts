@@ -1,6 +1,6 @@
 import axios from 'axios';
 import * as Crypto from 'expo-crypto';
-import type { Device, DeviceState, TuyaConfig, ISmartHomeProvider } from '@/types';
+import type { Device, DeviceState, TuyaConfig, ISmartHomeProvider } from '../types';
 
 const REGION_HOSTS: Record<string, string> = {
   eu: 'https://openapi.tuyaeu.com',

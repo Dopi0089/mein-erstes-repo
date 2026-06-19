@@ -1,4 +1,4 @@
-import type { Automation, Device } from '@/types';
+import type { Automation, Device } from '../types';
 import { setDeviceState } from './deviceManager';
 
 export async function evaluateAutomations(

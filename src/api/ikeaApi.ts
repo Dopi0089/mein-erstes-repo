@@ -1,5 +1,5 @@
 import axios from 'axios';
-import type { Device, DeviceState, IkeaConfig, ISmartHomeProvider } from '@/types';
+import type { Device, DeviceState, IkeaConfig, ISmartHomeProvider } from '../types';
 
 export class IkeaApi implements ISmartHomeProvider {
   readonly platform = 'ikea' as const;

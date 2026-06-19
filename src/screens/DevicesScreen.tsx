@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { View, Text, ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { colors, spacing, borderRadius, typography } from '@/theme';
-import { DeviceCard } from '@/components/DeviceCard';
-import { useDeviceStore } from '@/store/deviceStore';
-import type { Platform, DeviceType } from '@/types';
+import { colors, spacing, borderRadius, typography } from '../theme';
+import { DeviceCard } from '../components/DeviceCard';
+import { useDeviceStore } from '../store/deviceStore';
+import type { Platform, DeviceType } from '../types';
 
 type Filter = 'all' | Platform | DeviceType;
 

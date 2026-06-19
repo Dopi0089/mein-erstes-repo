@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ActivityIndicator } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { colors, spacing, borderRadius, typography } from '@/theme';
+import { colors, spacing, borderRadius, typography } from '../theme';
 import { PlatformBadge } from './PlatformBadge';
-import { setDeviceState } from '@/services/deviceManager';
-import type { Device } from '@/types';
+import { setDeviceState } from '../services/deviceManager';
+import type { Device } from '../types';
 
 const TYPE_ICONS: Record<Device['type'], keyof typeof Ionicons.glyphMap> = {
   light: 'bulb',

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, FlatList } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { colors, spacing, typography } from '@/theme';
+import { colors, spacing, typography } from '../theme';
 import { DeviceCard } from './DeviceCard';
-import type { Device } from '@/types';
+import type { Device } from '../types';
 
 interface Props {
   room: string;

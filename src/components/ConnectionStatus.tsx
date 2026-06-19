@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import { colors, spacing, typography } from '@/theme';
-import { useDeviceStore } from '@/store/deviceStore';
+import { colors, spacing, typography } from '../theme';
+import { useDeviceStore } from '../store/deviceStore';
 
 export function ConnectionStatus() {
   const { loading, error, lastSync } = useDeviceStore();

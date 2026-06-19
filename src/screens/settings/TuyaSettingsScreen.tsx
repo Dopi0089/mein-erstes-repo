@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, ScrollView, Alert, StyleSheet, ActivityIndicator } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useNavigation } from '@react-navigation/native';
-import { colors, spacing, borderRadius, typography } from '@/theme';
-import { useSettingsStore } from '@/store/settingsStore';
-import { tuyaApi } from '@/api/tuyaApi';
-import type { TuyaConfig } from '@/types';
+import { colors, spacing, borderRadius, typography } from '../../theme';
+import { useSettingsStore } from '../../store/settingsStore';
+import { tuyaApi } from '../../api/tuyaApi';
+import type { TuyaConfig } from '../../types';
 
 const REGIONS: TuyaConfig['region'][] = ['eu', 'us', 'cn', 'in'];
 

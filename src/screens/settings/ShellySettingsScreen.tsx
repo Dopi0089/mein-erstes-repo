@@ -3,10 +3,10 @@ import { View, Text, TextInput, TouchableOpacity, ScrollView, Alert, StyleSheet,
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
-import { colors, spacing, borderRadius, typography } from '@/theme';
-import { useSettingsStore } from '@/store/settingsStore';
-import { shellyApi } from '@/api/shellyApi';
-import type { ShellyConfig } from '@/types';
+import { colors, spacing, borderRadius, typography } from '../../theme';
+import { useSettingsStore } from '../../store/settingsStore';
+import { shellyApi } from '../../api/shellyApi';
+import type { ShellyConfig } from '../../types';
 
 export function ShellySettingsScreen() {
   const navigation = useNavigation();

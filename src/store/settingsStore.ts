@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import type { PlatformSettings, HueConfig, ShellyConfig, IkeaConfig, TuyaConfig, EufyConfig } from '@/types';
+import type { PlatformSettings, HueConfig, ShellyConfig, IkeaConfig, TuyaConfig, EufyConfig } from '../types';
 
 const STORAGE_KEY = 'smarthome_settings';
 

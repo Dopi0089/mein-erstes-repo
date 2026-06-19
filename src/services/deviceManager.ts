@@ -1,11 +1,11 @@
-import { hueApi } from '@/api/hueApi';
-import { shellyApi } from '@/api/shellyApi';
-import { ikeaApi } from '@/api/ikeaApi';
-import { tuyaApi } from '@/api/tuyaApi';
-import { eufyApi } from '@/api/eufyApi';
-import { useSettingsStore } from '@/store/settingsStore';
-import { useDeviceStore } from '@/store/deviceStore';
-import type { ISmartHomeProvider } from '@/types';
+import { hueApi } from '../api/hueApi';
+import { shellyApi } from '../api/shellyApi';
+import { ikeaApi } from '../api/ikeaApi';
+import { tuyaApi } from '../api/tuyaApi';
+import { eufyApi } from '../api/eufyApi';
+import { useSettingsStore } from '../store/settingsStore';
+import { useDeviceStore } from '../store/deviceStore';
+import type { ISmartHomeProvider } from '../types';
 
 const providers: ISmartHomeProvider[] = [hueApi, shellyApi, ikeaApi, tuyaApi, eufyApi];
 

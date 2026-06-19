@@ -1,9 +1,9 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, Switch, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { colors, spacing, borderRadius, typography } from '@/theme';
-import { useAutomationStore } from '@/store/automationStore';
-import type { Automation } from '@/types';
+import { colors, spacing, borderRadius, typography } from '../theme';
+import { useAutomationStore } from '../store/automationStore';
+import type { Automation } from '../types';
 
 interface Props {
   automation: Automation;
