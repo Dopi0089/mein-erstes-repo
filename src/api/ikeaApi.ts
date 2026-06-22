@@ -19,7 +19,6 @@ export class IkeaApi implements ISmartHomeProvider {
       baseURL: `https://${this.config.hubIp}:8443/v1`,
       timeout: 10000,
       headers: { Authorization: `Bearer ${this.config.accessToken}` },
-      httpsAgent: { rejectUnauthorized: false },
     });
   }
 
