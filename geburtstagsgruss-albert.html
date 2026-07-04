@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alles Gute zum Geburtstag, Albert!</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: linear-gradient(180deg, #87ceeb 0%, #b8e0f0 45%, #1a6b9c 45%, #0d4a73 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+  }
+
+  .karte {
+    background: rgba(255, 253, 245, 0.97);
+    max-width: 640px;
+    width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 20px 60px rgba(0, 30, 60, 0.45);
+    padding: 3rem 2.5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #c9a227;
+  }
+
+  .flagge {
+    display: inline-block;
+    width: 60px;
+    height: 40px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    margin-bottom: 1rem;
+  }
+  .flagge div { height: 33.34%; }
+  .rot { background: #ed2939; }
+  .weiss { background: #ffffff; }
+
+  h1 {
+    color: #0d4a73;
+    font-size: 2.1rem;
+    margin: 0.5rem 0 0.3rem;
+    line-height: 1.25;
+  }
+
+  .name {
+    color: #c9a227;
+    font-size: 2.6rem;
+    font-style: italic;
+    margin-bottom: 1.2rem;
+  }
+
+  .boot {
+    font-size: 4rem;
+    margin: 0.5rem 0;
+    animation: schaukeln 3.5s ease-in-out infinite;
+    display: inline-block;
+  }
+
+  @keyframes schaukeln {
+    0%, 100% { transform: rotate(-5deg) translateY(0); }
+    50%      { transform: rotate(5deg) translateY(-6px); }
+  }
+
+  .welle {
+    font-size: 1.4rem;
+    letter-spacing: 4px;
+    color: #1a6b9c;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    color: #2f3e4d;
+    font-size: 1.12rem;
+    line-height: 1.75;
+    margin-bottom: 1.1rem;
+    text-align: left;
+  }
+
+  .spruch {
+    font-style: italic;
+    color: #0d4a73;
+    font-size: 1.15rem;
+    text-align: center;
+    border-top: 1px solid #c9a227;
+    border-bottom: 1px solid #c9a227;
+    padding: 1rem 0;
+    margin: 1.5rem 0;
+  }
+
+  .baba {
+    font-size: 2rem;
+    color: #c9a227;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 1.5rem;
+  }
+
+  .gruss {
+    color: #2f3e4d;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <div class="karte">
+    <div class="flagge">
+      <div class="rot"></div>
+      <div class="weiss"></div>
+      <div class="rot"></div>
+    </div>
+
+    <h1>Herzlichen Glückwunsch zum Geburtstag,</h1>
+    <div class="name">lieber Albert!</div>
+
+    <div class="boot">⛵</div>
+    <div class="welle">〰️ 〰️ 〰️ 〰️ 〰️</div>
+
+    <p>
+      Zu Deinem Ehrentag wünschen wir Dir von Herzen alles Gute, beste Gesundheit
+      und immer eine Handbreit Wasser unterm Kiel!
+    </p>
+
+    <p>
+      Du bist nicht nur ein geschätzter Geschäftsfreund, sondern auch jemand, der
+      wie kein Zweiter versteht, aus altem Elektronikschrott wahre Schätze zu heben —
+      was andere wegwerfen, machst Du wieder wertvoll. Genau so ein Gespür wünscht
+      man sich auch im Leben: das Gute erkennen, wo andere längst aufgegeben haben.
+    </p>
+
+    <p>
+      Mögen Dir auch im neuen Lebensjahr stets günstige Winde in die Segel wehen —
+      auf dem Wasser wie im Geschäft. Setz die Segel, genieße Deinen Tag und lass
+      Dich ordentlich feiern!
+    </p>
+
+    <div class="spruch">
+      „Ein guter Kapitän segelt nicht nur bei ruhiger See —<br>
+      und ein guter Recycler sieht Gold, wo andere nur Schrott sehen.“
+    </div>
+
+    <div class="baba">Ba ba, lieber Albert — bis bald! 🥂</div>
+    <div class="gruss">Mit den allerbesten Wünschen aus dem Kreise Deiner Geschäftsfreunde</div>
+  </div>
+</body>
+</html>
